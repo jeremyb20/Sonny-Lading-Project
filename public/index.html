@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="sonnyProject">
+  <!-- <!-El ng-app lo que hace es llamar a la funcionalidad que esta dentro del app.js, que es el archivo principal de angular-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sonny project</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.21/angular-material.min.css">
+
+
+  <link rel="stylesheet" href="./lib/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./lib/angular-material.scss">
+  <link rel="stylesheet" href="./lib/angular-material.min.css">
+
+  
+  <link rel="stylesheet" href="./components/landing-page/landing-page.style.css">
+  <link rel="stylesheet" href="./components/landingone/landingone.styles.css">
+  <link rel="stylesheet" href="./components/landingtwo/landingtwo.styles.css">
+  <link rel="stylesheet" href="./components/landingtree/landingtree.view.css">
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+      <a class="navbar-brand" href="#">Sonny Project</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navPrincipal"
+        aria-controls="navPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navPrincipal">
+        <ul class="navbar-nav mr-auto justify-content-end">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link -toggle" href="#!/landingone" id="dropVehiculos" role="button" data-toggle=""
+              aria-haspopup="true" aria-expanded="false">
+              Landing(1)
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link -toggle" href="#!/landingtwo" id="dropVehiculos" role="button" data-toggle="" aria-haspopup="true"
+              aria-expanded="false">
+              Landing(2)
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link -toggle" href="#!/landingtree" id="dropTareas" role="button" data-toggle="" aria-haspopup="true"
+              aria-expanded="false">
+              Landing(3)
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  
+
+   
+  <div ui-view></div>
+  
+  <!-- Dependencias -->
+  <script src="./lib/jquery.min.js"></script>
+  <script src="./lib/popper.min.js"></script>
+  <script src="./lib/bootstrap/bootstrap.min.js"></script>
+  <script src="./lib/sweetalert.min.js"></script>
+  <!-- Scripts de angular -->
+  <script src="./lib/angular.min.js"></script>
+  <script src="./lib/angular-material.min.js"></script>
+
+
+   <!-- Angular Material Library -->   
+
+
+    <!-- Dependencias de Angular -->
+    <script src="./lib/angular-ui-router.min.js"></script>
+    <script src="./lib/angular-css.min.js"></script>
+    <script src="./lib/ocLazyLoad.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.11.1/sass.min.js"></script>
+
+  <!-- Scripts de la aplicación -->
+  <script src="./classes.js"></script>
+  <script src="./app.js"></script>
+  <script src="./route.js"></script>
+    <!-- Servicios de la aplicación -->
+  <script src="./components/services/usuarios.service.js"></script>
+      <!-- <script src="./components/services/autos.service.js"></script> -->
+</body>
+</html>
